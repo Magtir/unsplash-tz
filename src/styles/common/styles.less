@@ -1,0 +1,40 @@
+body {
+  * {
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+  }
+
+  a, a:hover, a:active, a:visited, a:focus {
+    text-decoration: none;
+  }
+
+  input {
+    border: none;
+  }
+
+  button {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .default-grid {
+    max-width: 1320px;
+    margin: 0 auto;
+
+    @media (max-width: 1349px) {
+      margin: 0 12px;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Graphik LC Web';
+    src: url('./Graphik/GraphikLCWeb-Bold.woff2') format('woff2'),
+    url('./Graphik/GraphikLCWeb-Bold.woff') format('woff'),
+    url('./Graphik/Graphik-Bold-Web.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Graphik LC Web';
+    src: url('./Graphik/GraphikLCWeb-Medium.woff2') format('woff2'),
+    url('./Graphik/GraphikLCWeb-Medium.woff') format('woff'),
+    url('./Graphik/Graphik-Medium-Web.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Graphik LC Web';
+    src: url('./Graphik/GraphikLCWeb-Regular.woff2') format('woff2'),
+    url('./Graphik/GraphikLCWeb-Regular.woff') format('woff'),
+    url('./Graphik/Graphik-Regular-Web.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./Roboto/Roboto-Bold.woff2') format('woff2'),
+    url('./Roboto/Roboto-Bold.woff') format('woff'),
+    url('./Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('./Roboto/Roboto-Medium.woff2') format('woff2'),
+    url('./Roboto/Roboto-Medium.woff') format('woff'),
+    url('./Roboto/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('./Roboto/Roboto-Regular.woff2') format('woff2'),
+    url('./Roboto/Roboto-Regular.woff') format('woff'),
+    url('./Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}

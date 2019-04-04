@@ -1,0 +1,37 @@
+<div class="top-screen" *ngIf="!filterRoute">
+    <div class="content">
+        <h1 class="title">
+            Unsplash-tz
+        </h1>
+        <div class="text">
+            Beautiful, free photos.<br>
+            Gifted by the world’s most generous community of photographers.
+        </div>
+
+        <form class="search-form" (submit)="onSubmit(filter.value)">
+            <button class="search-button">
+                <svg class="loop" version="1.1" viewBox="0 0 32 32" width="32" height="32" aria-hidden="false"><path d="M31 28.64l-7.57-7.57a12.53 12.53 0 1 0-2.36 2.36l7.57 7.57zm-17.5-6a9.17 9.17 0 1 1 6.5-2.64 9.11 9.11 0 0 1-6.5 2.67z"></path></svg>
+            </button>
+            <input type="text" #filter class="search-input" placeholder="Search free high-resolution photos">
+        </form>
+
+        <div class="example">
+            <span class="info">Trending searches:</span>
+            <a class="item" [routerLink]="'/f/business'">business,</a>
+            <a class="item" [routerLink]="'/f/computer'">computer,</a>
+            <a class="item" [routerLink]="'/f/nature'">nature,</a>
+            <a class="item" [routerLink]="'/f/love'">love,</a>
+            <a class="item" [routerLink]="'/f/house'">house</a>
+        </div>
+    </div>
+</div>
+
+<div class="search-title default-grid" *ngIf="filterRoute">
+    <h1 class="title">
+        {{filterRoute}}
+    </h1>
+
+    <div class="text">
+        {{text}}
+    </div>
+</div>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Host: imis.vyatsu.ru

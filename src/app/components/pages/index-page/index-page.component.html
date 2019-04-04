@@ -1,0 +1,26 @@
+<div class="index-page" [ngClass]="{'hide': ls.loader}">
+    <app-top-screen [filterRoute]="filter"></app-top-screen>
+
+    <div class="list-image default-grid">
+        <div class="column column-0">
+            <app-column-item [listItems]="column0"></app-column-item>
+
+            <app-column-item [listItems]="column1" [className]="'double-small'"></app-column-item>
+
+            <app-column-item [listItems]="column2" [className]="'double'"></app-column-item>
+        </div>
+
+        <div class="column column-1">
+            <app-column-item [listItems]="column1"></app-column-item>
+
+            <app-column-item [listItems]="column2" [className]="'double'"></app-column-item>
+        </div>
+
+        <div class="column column-2">
+            <app-column-item [listItems]="column2"></app-column-item>
+        </div>
+    </div>
+
+    <div class="load" *ngIf="!load">loading...</div>
+    <img *ngIf="page == 1 && load" class="not-photos" [src]="'/assets/images/not-photos.png'" alt="">
+</div>

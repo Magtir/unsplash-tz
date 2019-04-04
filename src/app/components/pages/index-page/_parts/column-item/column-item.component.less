@@ -1,0 +1,139 @@
+.item {
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    .content {
+      @media (min-width: 768px) {
+        opacity: 1;
+
+        .event-bg {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+    transition: all 400ms;
+
+    .event-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: all 400ms;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .block-up {
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      z-index: 1;
+
+      .like {
+        height: 32px;
+        color: #777;
+        background-color: #dce7eb;
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+        padding: 0 15px;
+        opacity: 0.8;
+        transition: all 400ms;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        &.active {
+          background-color: #f70000;
+
+          &:hover {
+            background-color: #d60000;
+          }
+
+          .heart {
+            fill: white;
+          }
+
+          .count {
+            color: white;
+          }
+        }
+
+        .heart {
+          width: 15px;
+          height: 15px;
+          fill: red;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .block-down {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1;
+
+      .box-user {
+        display: flex;
+        align-items: center;
+
+        .ava {
+          width: 32px;
+          height: 32px;
+          background-position: 50% 50%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 100%;
+          margin-right: 10px;
+        }
+
+        .name {
+          color: #fff;
+          opacity: .8;
+          font-size: 15px;
+          transition: all 300ms;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+
+      .download {
+        margin-left: 20px;
+        width: 40px;
+        height: 32px;
+        background-color: #dce7eb;
+        border-radius: 4px;
+        padding: 0 15px;
+        opacity: 0.8;
+        transition: all 400ms;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        .down-img {
+          fill: gray;
+        }
+      }
+    }
+  }
+}

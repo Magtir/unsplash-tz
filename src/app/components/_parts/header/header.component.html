@@ -1,0 +1,38 @@
+<header class="header">
+    <div class="part-up">
+        <a class="logo" [routerLink]="'/' + r.index">
+            <svg class="_1Ig-9" version="1.1" viewBox="0 0 32 32" width="32" height="32" aria-hidden="false">
+                <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+            </svg>
+        </a>
+        <form class="search-form" (submit)="onSubmit(input)">
+            <button class="search-button">
+                <svg class="loop" version="1.1" viewBox="0 0 32 32" width="32" height="32" aria-hidden="false"><path d="M31 28.64l-7.57-7.57a12.53 12.53 0 1 0-2.36 2.36l7.57 7.57zm-17.5-6a9.17 9.17 0 1 1 6.5-2.64 9.11 9.11 0 0 1-6.5 2.67z"></path></svg>
+            </button>
+            <input class="search-input" #input placeholder="Search free high-resolution photos" type="text">
+        </form>
+        <div class="menu">
+            <a class="menu-item" [routerLink]="'/' + r.index">Home</a>
+        </div>
+    </div>
+
+    <div class="part-down">
+        <div class="filter">
+            <a class="filter-item" [routerLink]="'/f/' + r.filterWallpapers" routerLinkActive="active">Wallpapers</a>
+            <a class="filter-item" [routerLink]="'/f/' + r.filterTexturesAndPatterns" routerLinkActive="active">Textures & Patterns</a>
+            <a class="filter-item" [routerLink]="'/f/' + r.filterNature" routerLinkActive="active">Nature</a>
+            <a class="filter-item" [routerLink]="'/f/' + r.filterCurrentEvents" routerLinkActive="active">Current Events</a>
+            <a class="filter-item" [routerLink]="'/f/' + r.filterArchitecture" routerLinkActive="active">Architecture</a>
+            <a class="filter-item" [routerLink]="'/f/' + r.filterBusinessAndWork" routerLinkActive="active">Business & Work</a>
+            <a class="filter-item" [routerLink]="'/f/' + r.filterAnimals" routerLinkActive="active">Animals</a>
+            <a class="filter-item" [routerLink]="'/f/' + r.filterTravel" routerLinkActive="active">Travel</a>
+            <a class="filter-item" [routerLink]="'/f/' + r.filterFashion" routerLinkActive="active">Fashion</a>
+            <a class="filter-item" [routerLink]="'/f/' + r.filterFoodAndDrink" routerLinkActive="active">Food & Drink</a>
+            <a class="filter-item" [routerLink]="'/f/' + r.filterSpirituality" routerLinkActive="active">Spirituality</a>
+            <a class="filter-item" [routerLink]="'/f/' + r.filterExperimental" routerLinkActive="active">Experimental</a>
+            <a class="filter-item" [routerLink]="'/f/' + r.filterPeople" routerLinkActive="active">People</a>
+            <a class="filter-item" [routerLink]="'/f/' + r.filterHealth" routerLinkActive="active">Health</a>
+            <a class="filter-item" [routerLink]="'/f/' + r.filterArtsAndCulture" routerLinkActive="active">Arts & Culture</a>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,8 @@
+<div class="modal" [ngClass]="{'active': modalOpen}">
+    <div class="modal__overlay" (click)="modalService.close()"></div>
+
+    <div class="modal__inner">
+        <app-modal-photo-view></app-modal-photo-view>
+        <app-success-form></app-success-form>
+    </div>
+</div>
